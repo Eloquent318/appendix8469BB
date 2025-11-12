@@ -1,4 +1,4 @@
-# 💦 پنل BPB
+# پنل BPB
 
 ![پنل BPB](images/panel-overview.jpg)
 
@@ -23,7 +23,7 @@
 - **کانفیگ‌های Warp Pro**: کانفیگ‌های Warp بهینه‌شده برای شرایط خاص ایران.
 - **پشتیبانی از Fragment**: اتصال حتی در صورت فیلتر شدن دامنه.
 - **قوانین مسیریابی کامل**: دور زدن سایت‌های ایرانی، چینی، روسی و LAN، مسدود کردن QUIC، محتوای پورن، تبلیغات، بدافزارها، فیشینگ و در زدن سایت‌های تحریمی.
-- **زنجیره‌ی Proxy**: می‌تونید یه Proxy زنجیره‌ای اضافه کنید تا IP ثابت بشه.
+- **زنجیره‌ی Proxy**: می‌تونید یه Proxy زنجیره‌ای از نوع VLESS، Trojan، Shadowsocks، Socks یا http اضافه کنید تا IP ثابت بشه.
 - **پشتیبانی از برنامه‌های مختلف**: لینک‌های اشتراک برای برنامه‌های با هسته‌های Xray، Sing-box و Clash-Mihomo.
 - **پنل امن با رمز عبور**: پنل محافظت شده با رمز عبور.
 - **سفارشی‌سازی کامل**: تنظیم IP تمیز، Proxy IP، سرورهای DNS، انتخاب پورت‌ها و پروتکل‌ها، Warp Endpoint و خیلی امکانات دیگه.
@@ -42,21 +42,31 @@
 
 ## برنامه‌های پشتیبانی‌شده
 
-|       Client        |      Version      | Fragment support | Warp Pro support |
-| :-----------------: | :---------------: | :--------------: | :--------------: |
-|     **v2rayNG**     | 1.10.11 یا بالاتر | :material-check: | :material-check: |
-|     **MahsaNG**     |   14 یا بالاتر    | :material-check: | :material-check: |
-|     **v2rayN**      | 7.14.6 یا بالاتر  | :material-check: | :material-check: |
-|   **v2rayN-PRO**    |   1.9 یا بالاتر   | :material-check: | :material-check: |
-|    **Sing-box**     | 1.11.2 یا بالاتر  | :material-close: | :material-close: |
-|    **Streisand**    | 1.6.60 یا بالاتر  | :material-check: | :material-check: |
-|      **Happ**       |                   | :material-check: | :material-check: |
-|      **V2Box**      |                   | :material-close: | :material-close: |
-|   **Clash Meta**    |                   | :material-close: | :material-close: |
-| **Clash Verge Rev** |                   | :material-close: | :material-close: |
-|     **FLClash**     |                   | :material-close: | :material-close: |
-|   **AmneziaVPN**    |                   | :material-close: | :material-check: |
-|    **WG Tunnel**    |                   | :material-close: | :material-check: |
+|       Client        |      Version      | پشتیبانی از Fragment | پشتیبانی از Warp Pro |
+| :-----------------: | :---------------: | :------------------: | :------------------: |
+|     **v2rayNG**     | 1.10.26 یا بالاتر |   :material-check:   |   :material-check:   |
+|     **MahsaNG**     |   14 یا بالاتر    |   :material-check:   |   :material-check:   |
+|     **v2rayN**      | 7.15.4 یا بالاتر  |   :material-check:   |   :material-check:   |
+|   **v2rayN-PRO**    |   1.9 یا بالاتر   |   :material-check:   |   :material-check:   |
+|    **Sing-box**     | 1.11.2 یا بالاتر  |   :material-close:   |   :material-close:   |
+|    **Streisand**    | 1.6.64 یا بالاتر  |   :material-check:   |   :material-check:   |
+|   **Clash Meta**    |                   |   :material-close:   |   :material-check:   |
+| **Clash Verge Rev** |                   |   :material-close:   |   :material-check:   |
+|     **FLClash**     |                   |   :material-close:   |   :material-check:   |
+|   **AmneziaVPN**    |                   |   :material-close:   |   :material-check:   |
+|    **WG Tunnel**    |                   |   :material-close:   |   :material-check:   |
+
+## متغیرهای محیطی (داشبورد کلادفلر)
+
+|  نام متغیر   |           مورد استفاده            |       اجباری       |
+| :----------: | :-------------------------------: | :----------------: |
+|   **UUID**   |      UUID برای پروتکل VLESS       | :heavy_check_mark: |
+| **TR_PASS**  |        پسورد پروتکل Trojan        | :heavy_check_mark: |
+| **PROXY_IP** |   Proxy IP برای VLESS و Trojan    |        :x:         |
+|  **PREFIX**  | NAT64 Prefix برای VLESS و Trojan  |        :x:         |
+| **SUB_PATH** |     مسیر لینک‌های اشتراک شخصی     |        :x:         |
+| **FALLBACK** | دامنه‌ی پوششی برای VLESS و Trojan |        :x:         |
+| **DOH_URL**  |    DOH برای عملیات داخلی ورکر     |        :x:         |
 
 ---
 
